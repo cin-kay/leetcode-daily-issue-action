@@ -10,4 +10,4 @@ COPY --from=builder /app /app
 WORKDIR /app
 ENV PYTHONPATH /app
 
-CMD ["leetcode_github_issue.py"]
+CMD ["main.py"]
