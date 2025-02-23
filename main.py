@@ -5,8 +5,8 @@ import requests
 DEBUG = os.environ.get("DEBUG")
 
 GITHUB_BASE_URL = "https://api.github.com"
-GITHUB_REPOSITORY = os.environ.get("INPUT_GITHUB_REPOSITORY")
-GITHUB_TOKEN = os.environ.get("INPUT_GITHUB_TOKEN")
+GITHUB_REPOSITORY = os.environ.get("GITHUB_REPOSITORY")
+GITHUB_TOKEN = os.environ.get("LC_GH_TOKEN")
 
 LEETCODE_BASE_URL = "https://leetcode.com"
 EMOJI = {"easy": "🟢", "medium": "🟡", "hard": "🔴"}
