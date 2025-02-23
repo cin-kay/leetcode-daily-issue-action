@@ -1,0 +1,21 @@
+name: "Daily Leetcode Issue Creator"
+description: "Automatically creates a GitHub issue for today's Leetcode daily problem."
+author: "cin-kay"
+branding:
+  icon: inbox
+  color: gray-dark
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+inputs:
+  github_token:
+    description: "GitHub token for API requests. Use a Personal Access Token (PAT) if needed."
+    required: true
+    default: ${{ github.token }}
+
+  github_repository:
+    description: "Repository name with owner (e.g., cin-kay/daily-leetcode)."
+    required: true
+    default: ${{ github.repository }}
